@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variable</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="box_gr">
+        <label for="size">Width-Height:</label>
+        <input type="number" class="action" name="size" id="size" min="1" max="300" step="1" value="200" />
+      </div>
+      <div class="box_gr">
+        <label for="postion">Position:</label>
+        <input type="radio" class="action" name="postion" id="left" value="left" />
+        <label for="left">left</label>
+        <input type="radio" class="action" name="postion" id="center" value="center" checked />
+        <label for="center">center</label>
+        <input type="radio" class="action" name="postion" id="right" value="right" />
+        <label for="right">right</label>
+      </div>
+      <div class="box_gr">
+        <label for="border">Border:</label>
+        <input type="range" class="action" name="border" id="border" min="10" max="20" value="10" />
+      </div>
+      <div class="box_gr">
+        <label for="color">Color:</label>
+        <input type="color" class="action" name="color" id="color" value="#000000" />
+      </div>
+      <div class="box_gr">
+        <label for="background">Background:</label>
+        <input type="color" class="action" name="background" id="background" value="#ffffff" />
+        <input type="color" class="action" name="background-radia" id="background-radia" value="#000000" />
+      </div>
+      <p class="box_result-ttl">View:</p>
+      <div class="box_view">
+        <div class="box_re"></div>
+      </div>
+      <p class="box_result-ttl">Result:</p>
+      <div class="box_result">
+        <button type="button" class="box_cp">Copy Code</button>
+        <p>
+          max-width: 100%;<br />
+          border: 10px solid rgb(0, 0, 0); <br />
+          background-image: linear-gradient(red , yellow); <br />
+          width: 200px;<br />
+          height: 200px;<br />
+          margin: 0px auto;
+        </p>
+      </div>
+    </div>
+
+    <script src="common.js"></script>
+  </body>
+</html>
